@@ -5,7 +5,13 @@ class ExpensesModel {
   String? amount;
   String? date;
 
-  ExpensesModel({this.id, this.createdAt, this.title, this.amount, this.date});
+  ExpensesModel({
+    this.id,
+    this.createdAt,
+    this.title,
+    this.amount,
+    this.date,
+  });
 
   ExpensesModel.fromJson(Map<String, dynamic> json) {
     id = json['id'] as int;

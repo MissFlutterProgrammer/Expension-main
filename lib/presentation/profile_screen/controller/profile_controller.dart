@@ -34,7 +34,8 @@ class ProfileController extends GetxController with StateMixin<dynamic> {
         onFetchNameCollectionSuccess(response.data);
       } else {
         onFetchNameCollectionError(
-            response.error?.message ?? 'something went wrong !!');
+          response.error?.message ?? 'something went wrong !!',
+        );
       }
     } catch (err) {
       ProgressDialogUtils.hideProgressDialog();
@@ -45,12 +46,10 @@ class ProfileController extends GetxController with StateMixin<dynamic> {
   void onFetchNameCollectionSuccess(dynamic response) {
     if (response != null) {
       nameModel = NameModel.fromJson(response);
-      if (nameModel != null) {
-        profileModelObj.value.enjelinMorgeanTxt.value =
-            nameModel.name!.toString();
-        profileModelObj.value.enjelinmorgeaTxt.value =
-            nameModel.email!.toString();
-      }
+      profileModelObj.value.enjelinMorgeanTxt.value =
+          nameModel.name!.toString();
+      profileModelObj.value.enjelinmorgeaTxt.value =
+          nameModel.email!.toString();
     }
     Fluttertoast.showToast(
       msg: "Working!",

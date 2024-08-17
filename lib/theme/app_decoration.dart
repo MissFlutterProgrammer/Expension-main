@@ -4,17 +4,13 @@ import 'package:flutterexpension/core/app_export.dart';
 class AppDecoration {
   static BoxDecoration get groupstylecornerradius => BoxDecoration(
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            8.00,
-          ),
+          getHorizontalSize(8.00),
         ),
       );
   static BoxDecoration get groupstylegray100cornerradius => BoxDecoration(
         color: ColorConstant.gray100,
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            25.00,
-          ),
+          getHorizontalSize(25.00),
         ),
       );
   static BoxDecoration get groupstylewhiteA700 => BoxDecoration(
@@ -23,31 +19,20 @@ class AppDecoration {
   static BoxDecoration get groupstylewhite1 => BoxDecoration(
         color: ColorConstant.whiteA700,
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            60.00,
-          ),
+          getHorizontalSize(60.00),
         ),
       );
   static BoxDecoration get groupstylewhiteA700cornerradius => BoxDecoration(
         color: ColorConstant.whiteA700,
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            20.00,
-          ),
+          getHorizontalSize(20.00),
         ),
         boxShadow: [
           BoxShadow(
             color: ColorConstant.black90014,
-            spreadRadius: getHorizontalSize(
-              2.00,
-            ),
-            blurRadius: getHorizontalSize(
-              2.00,
-            ),
-            offset: Offset(
-              0,
-              22,
-            ),
+            spreadRadius: getHorizontalSize(2.00),
+            blurRadius: getHorizontalSize(2.00),
+            offset: Offset(0, 22),
           ),
         ],
       );
@@ -55,39 +40,24 @@ class AppDecoration {
         color: ColorConstant.whiteA700,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(
-            getHorizontalSize(
-              30.00,
-            ),
+            getHorizontalSize(30.00),
           ),
           topRight: Radius.circular(
-            getHorizontalSize(
-              30.00,
-            ),
+            getHorizontalSize(30.00),
           ),
           bottomLeft: Radius.circular(
-            getHorizontalSize(
-              0.00,
-            ),
+            getHorizontalSize(0.00),
           ),
           bottomRight: Radius.circular(
-            getHorizontalSize(
-              0.00,
-            ),
+            getHorizontalSize(0.00),
           ),
         ),
         boxShadow: [
           BoxShadow(
             color: ColorConstant.black90014,
-            spreadRadius: getHorizontalSize(
-              2.00,
-            ),
-            blurRadius: getHorizontalSize(
-              2.00,
-            ),
-            offset: Offset(
-              0,
-              24.483871459960938,
-            ),
+            spreadRadius: getHorizontalSize(2.00),
+            blurRadius: getHorizontalSize(2.00),
+            offset: Offset(0, 24.483871459960938),
           ),
         ],
       );
@@ -96,40 +66,27 @@ class AppDecoration {
         boxShadow: [
           BoxShadow(
             color: ColorConstant.black9000f,
-            spreadRadius: getHorizontalSize(
-              2.00,
-            ),
-            blurRadius: getHorizontalSize(
-              2.00,
-            ),
-            offset: Offset(
-              0,
-              -2,
-            ),
+            spreadRadius: getHorizontalSize(2.00),
+            blurRadius: getHorizontalSize(2.00),
+            offset: Offset(0, -2),
           ),
         ],
       );
   static BoxDecoration get textstyleintermedium142 => BoxDecoration(
         color: ColorConstant.redA20019,
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            12.50,
-          ),
+          getHorizontalSize(12.50),
         ),
       );
   static BoxDecoration get groupstyletealA700cornerradius => BoxDecoration(
         color: ColorConstant.tealA700,
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            15.12,
-          ),
+          getHorizontalSize(15.12),
         ),
       );
   static BoxDecoration get textstyleintersemibold8 => BoxDecoration(
         borderRadius: BorderRadius.circular(
-          getHorizontalSize(
-            30.00,
-          ),
+          getHorizontalSize(30.00),
         ),
       );
   static BoxDecoration get groupstyle => BoxDecoration(

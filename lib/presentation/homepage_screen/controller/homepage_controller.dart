@@ -64,10 +64,8 @@ class HomepageController extends GetxController with StateMixin<dynamic> {
   void onFetchNameCollectionSuccess(dynamic response) {
     if (response != null) {
       nameModel = NameModel.fromJson(response);
-      if (nameModel != null) {
-        homepageModelObj.value.enjelinMorgeanTxt.value =
-            nameModel.name!.toString();
-      }
+      homepageModelObj.value.enjelinMorgeanTxt.value =
+          nameModel.name!.toString();
     }
     Get.defaultDialog(
         onConfirm: () => Get.back(),

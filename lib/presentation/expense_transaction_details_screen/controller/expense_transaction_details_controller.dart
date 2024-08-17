@@ -30,7 +30,7 @@ class ExpenseTransactionDetailsController extends GetxController
           .select()
           .order('created_at', ascending: false)
           .limit(1)
-          .execute();
+          ._execute();
       ProgressDialogUtils.hideProgressDialog();
       if (response.status == 200) {
         onFetchExpensesCollectionSuccess(response.data);
@@ -48,14 +48,9 @@ class ExpenseTransactionDetailsController extends GetxController
     if (response != null) {
       expensesModel =
           (response as List).map((e) => ExpensesModel.fromJson(e)).toList();
-      if (expensesModel != null) {
-        expenseTransactionDetailsModelObj.value.claireJovalskiTxt.value =
-            '';
-        expenseTransactionDetailsModelObj.value.k8500Txt.value =
-            '';
-        expenseTransactionDetailsModelObj.value.feb292022Txt.value =
-            '';
-      }
+      expenseTransactionDetailsModelObj.value.claireJovalskiTxt.value = '';
+      expenseTransactionDetailsModelObj.value.k8500Txt.value = '';
+      expenseTransactionDetailsModelObj.value.feb292022Txt.value = '';
     }
     Get.defaultDialog(
         onConfirm: () => Get.back(), title: "WOW", middleText: "Fetched");
